@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import tamil4 from '../assets/broo.jpeg'
 
 const ViewTabs = () => {
     const [activeSection, setActiveSection] = useState("#about");
@@ -11,17 +12,17 @@ const ViewTabs = () => {
         <div className="min-h-screen flex flex-wrap justify-center items-center bg-cover bg-center bg-fixed p-5" style={{ backgroundImage: "url(https://images.unsplash.com/photo-1566738780863-f9608f88f3a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80)" }}>
             <div className={`max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ${activeSection !== "#about" ? "h-[550px]" : "h-[450px]"}`}>
 
-                <div className="relative flex-shrink-0 h-52">
-                    <div className="absolute inset-0 bg-cover bg-center filter blur-lg scale-125" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')" }}></div>
-                    <img className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white" src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="avatar" />
-                    <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-xl font-bold">William Rocheald</h1>
-                    <h2 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm font-medium opacity-70 uppercase tracking-widest">UI Developer</h2>
+                <div className="relative flex-shrink-0 h-56">
+                    <div className="absolute inset-0 bg-cover bg-center h-24 filter blur-lg scale-125 " style={{ backgroundImage: "url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80')" }}></div>
+                    <img className="absolute bottom-8  left-1/2 transform -translate-x-1/2 w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white" src={tamil4} alt="avatar" />
+                    <h1 className="absolute bottom-36 left-1/2 transform -translate-x-1/2 text-xl font-bold">William Rocheald</h1>
+                    <h2 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-sm font-medium opacity-70 text-black tracking-widest">UI Developer</h2>
                 </div>
 
                 <div className="p-5">
                     {activeSection === "#about" && (
                         <div className="animate-fadeIn">
-                            <h3 className="font-bold text-lg mb-2">ABOUT</h3>
+                            <h3 className="font-bold text-lg  text-black mb-2">ABOUT</h3>
                             <p className="text-sm text-gray-700 leading-relaxed">Whatever tattooed stumptown art party sriracha gentrify hashtag intelligentsia readymade schlitz brooklyn disrupt.</p>
                             <div className="flex space-x-3 mt-4">
                                 {/* Add social media icons */}
@@ -42,27 +43,27 @@ const ViewTabs = () => {
                     )}
                     {activeSection === "#experience" && (
                         <div className="animate-fadeIn">
-                            <h3 className="font-bold text-lg mb-2">WORK EXPERIENCE</h3>
+                            <h3 className="font-bold  text-gray-600 text-lg mb-2">WORK EXPERIENCE</h3>
                             <div className="space-y-5">
                                 {/* Experience items */}
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
-                                    <h4 className="font-semibold">Front-end Developer at <span className="font-bold">JotForm</span> (2014)</h4>
+                                    <div className="absolute  left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
+                                    <h4 className="font-semibold  text-gray-900">Front-end Developer at <span className="font-bold  text-gray-600">JotForm</span> (2014)</h4>
                                     <p className="text-sm text-gray-700">Disrupt stumptown retro everyday carry unicorn.</p>
                                 </div>
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
-                                    <h4 className="font-semibold">UI Developer at <span className="font-bold">GitHub</span> (2016)</h4>
+                                    <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
+                                    <h4 className="font-semibold  text-gray-600">UI Developer at <span className="font-bold  text-gray-600">GitHub</span> (2016)</h4>
                                     <p className="text-sm text-gray-700">Developed new conversion funnels and disrupt.</p>
                                 </div>
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
-                                    <h4 className="font-semibold">Illustrator at <span className="font-bold">Google</span> (2018)</h4>
+                                    <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
+                                    <h4 className="font-semibold  text-gray-600">Illustrator at <span className="font-bold  text-gray-600">Google</span> (2018)</h4>
                                     <p className="text-sm text-gray-700">Onboarding illustrations for App.</p>
                                 </div>
                                 <div className="relative pl-10">
-                                    <div className="absolute left-0 top-0 w-2 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
-                                    <h4 className="font-semibold">Full-Stack Developer at <span className="font-bold">CodePen</span> (2020)</h4>
+                                    <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
+                                    <h4 className="font-semibold">Full-Stack Developer at <span className="font-bold  text-gray-600">CodePen</span> (2020)</h4>
                                     <p className="text-sm text-gray-700">Responsible for the encompassing brand experience.</p>
                                 </div>
                             </div>
@@ -70,7 +71,7 @@ const ViewTabs = () => {
                     )}
                     {activeSection === "#contact" && (
                         <div className="animate-fadeIn">
-                            <h3 className="font-bold text-lg mb-2">CONTACT</h3>
+                            <h3 className="font-bold text-lg text-black mb-2">CONTACT</h3>
                             <div className="space-y-4">
                                 <div className="flex items-center text-gray-700 text-sm">
                                     <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></svg>

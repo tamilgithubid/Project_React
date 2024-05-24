@@ -737,3 +737,192 @@ animate-fadeIn {
   transform: translateY(40px);
   transition: opacity 300ms ease, transform 300ms ease;
 }
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sintony', sans-serif;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.parallax {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Custom CSS */
+.perspective {
+  perspective: 800px;
+}
+
+.card-info {
+  transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-info h1,
+.card-info p {
+  transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-wrap:hover .card-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-wrap:hover .card-info h1,
+.card-wrap:hover .card-info p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card-wrap:hover .card-bg {
+  opacity: 0.8;
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-wrap:hover .card {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+  transition: box-shadow 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+
+/* .text-shadow-md {
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.2);
+} */
+
+
+
+/* App.css */
+/* @import 'https://fonts.googleapis.com/css2?family=Lato:wght@400;600&display=swap';
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(to bottom, #222, #333 30%, #555);
+  min-height: 100%;
+}
+
+.cards-grid {
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: 350px 1fr 350px;
+  grid-template-rows: repeat(4, 100vh);
+  place-items: center;
+  perspective: 1200px;
+}
+
+.card {
+  width: 100%;
+  height: 60%;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  position: relative;
+  box-shadow: 4px 6px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card:nth-of-type(2n + 1) {
+  grid-column: 1 / 2;
+}
+
+.card:nth-of-type(2n) {
+  grid-column: 3 / 4;
+}
+
+.card-title {
+  color: #fff;
+  font-weight: 600;
+  padding-left: 40px;
+  text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  min-width: 500px;
+  font-size: 80px;
+  margin-top: 30%;
+}
+
+.card:nth-of-type(2n + 1)>.card-title {
+  left: 70%;
+}
+
+.card:nth-of-type(2n)>.card-title {
+  right: 70%;
+  text-align: right;
+} */

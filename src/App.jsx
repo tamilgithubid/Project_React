@@ -12,11 +12,14 @@ import UseSyncExternalStore from './v18_ooks/UseSyncExternalStore'
 import LogIn from './LoginPage/LogIn'
 import Table from './CURD/Table'
 import ViewPage from './SmartPage/ViewPage'
-import BackGround from './SmartPage/BackGround'
+
 import ProfileCard from './Profile/ProfileCard'
 import DashBoard from './CURD/DashBoard'
 import Comments from './CURD/Comments'
 import ViewTabs from './CURD/ViewTabs'
+import Mountain from './Parallax/Mountain'
+import SideEffect from './3D Card/SideEffect'
+import CardGrid from './3D Card/CardGrid'
 
 
 
@@ -41,16 +44,27 @@ export default function App() {
         <UseDeferredValue />
         <UseId />
         <UseSyncExternalStore />
-        <BackGround />
-        <LogIn /> 
-      <ViewPage />*/}
-        <ProfileCard />
-        <Comments />
+         <CardGrid />
+      */}
+
+
+        <Mountain />
+
         <ViewTabs />
         <DashBoard />
+        <Comments />
+
         <LogIn />
+        <SideEffect />
+        <ViewPage />
+        <ProfileCard />
+
+
+
 
         <Table />
+
+
 
 
 

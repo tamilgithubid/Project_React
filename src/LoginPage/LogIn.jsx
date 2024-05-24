@@ -119,24 +119,24 @@ const LogIn = () => {
                 <div className={`form-container absolute top-0 left-0 w-full h-full transition-transform duration-600 ease-in-out ${isSignUpActive ? 'right-panel-active' : ''}`}>
                     <div className={`sign-up-container absolute top-0 left-0 w-1/2 h-full transition-opacity duration-600 ease-in-out ${isSignUpActive ? 'translate-x-[100%] opacity-100 z-1' : 'opacity-0 z-0'}`}>
                         <form onSubmit={handleRegister} className="flex flex-col items-center justify-center h-full bg-white px-12 text-center">
-                            <h1 className="font-bold m-0  font-sans justify-center  text-2xl mb-4">Create Account</h1>
-                            <div className="social-container my-5">
+                            <h1 className="font-bold m-0  font-sans justify-center  text-black  text-2xl mt-4">Create Account</h1>
+                            <div className="social-container  my-5">
                                 <a onClick={googleLogin} href="#" className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-google"></i>
+                                    <i className="fab fa-google  text-black"></i>
                                 </a>
                                 <a onClick={facebookLogin} href="#" className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f  text-black"></i>
                                 </a>
 
                                 <a href="#" className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-linkedin-in  text-black"></i>
                                 </a>
                             </div>
-                            <span className="my-4">or use your email for registration</span>
-                            <input className="bg-gray-200 border-none py-3 px-4 mb-4 w-full" onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder="Name" />
-                            <input className="bg-gray-200 border-none py-3 px-4 mb-4 w-full" onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder="Email" />
+                            <span className="my-4  text-black">or use your email for registration</span>
+                            <input className="bg-gray-200 border-none py-3 px-4 mb-4  text-black w-full" onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder="Name" />
+                            <input className="bg-gray-200 border-none py-3 px-4 mb-4  text-black w-full" onChange={(e) => setEmail(e.target.value)} value={email} type="email" placeholder="Email" />
                             <div className="relative">
-                                <input style={{ width: "18rem" }} className="bg-gray-200 border-none py-3 px-4 mb-4 w-full pr-10" onChange={(e) => setPassword(e.target.value)} value={password} type={showPassword ? "text" : "password"} placeholder="Password" />
+                                <input style={{ width: "18rem" }} className="bg-gray-200 border-none py-3 px-4  text-black mb-4 w-full pr-10" onChange={(e) => setPassword(e.target.value)} value={password} type={showPassword ? "text" : "password"} placeholder="Password" />
                                 <button type="button" className="absolute inset-y-0 mb-3 right-0 flex items-center px-3" onClick={togglePasswordVisibility}>
                                     {showPassword ? <i className="fas fa-eye-slash text-gray-500"></i> : <i className="fas fa-eye text-gray-500"></i>}
                                 </button>
@@ -147,23 +147,23 @@ const LogIn = () => {
 
                     <div className={`sign-in-container absolute top-0 left-0 w-1/2 h-full transition-opacity duration-600 ease-in-out ${isSignUpActive ? 'translate-x-[100%] opacity-0 z-0' : 'opacity-100 z-1'}`}>
                         <form onSubmit={handleSignIn} className="flex flex-col items-center justify-center h-full bg-white px-12 text-center">
-                            <h1 className="font-bold font-sans m-0 mb-2 text-3xl">Sign in</h1>
+                            <h1 className="font-bold font-sans m-0 mb-2 text-black text-3xl">Sign in</h1>
                             <div className="social-container my-5">
                                 <a href="#" onClick={googleLogin} className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-google"></i>
+                                    <i className="fab fa-google  text-black"></i>
                                 </a>
                                 <a onClick={facebookLogin} href="#" className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-facebook-f"></i>
+                                    <i className="fab fa-facebook-f  text-black"></i>
                                 </a>
 
                                 <a href="#" className="social mx-1.5 border border-gray-300 rounded-full inline-flex justify-center items-center h-10 w-10">
-                                    <i className="fab fa-linkedin-in"></i>
+                                    <i className="fab fa-linkedin-in  text-black"></i>
                                 </a>
                             </div>
-                            <span className="my-4">or use your account</span>
-                            <input className="bg-gray-200 border-none py-3 px-4 mb-4 w-full" onChange={(e) => setEmail(e.target.value)} value={email || ''} type="email" placeholder="Email" />
+                            <span className="my-4  text-black">or use your account</span>
+                            <input className="bg-gray-200 border-none py-3 px-4 mb-4  text-black w-full" onChange={(e) => setEmail(e.target.value)} value={email || ''} type="email" placeholder="Email" />
                             <div className="relative">
-                                <input style={{ width: "18rem" }} className="bg-gray-200 border-none py-3 px-4 mb-4 w-full pr-10" onChange={(e) => setPassword(e.target.value)} value={password} type={showPassword ? "text" : "password"} placeholder="Password" />
+                                <input style={{ width: "18rem" }} className="bg-gray-200 border-none py-3  text-black  px-4 mb-4 w-full pr-10" onChange={(e) => setPassword(e.target.value)} value={password} type={showPassword ? "text" : "password"} placeholder="Password" />
                                 <button type="button" className="absolute inset-y-0 mb-3 right-0 flex items-center px-3" onClick={togglePasswordVisibility}>
                                     {showPassword ? <i className="fas fa-eye-slash text-gray-500"></i> : <i className="fas fa-eye text-gray-500"></i>}
                                 </button>
