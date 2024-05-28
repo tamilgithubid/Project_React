@@ -20,6 +20,7 @@ import ViewTabs from './CURD/ViewTabs'
 import Mountain from './Parallax/Mountain'
 import SideEffect from './3D Card/SideEffect'
 import CardGrid from './3D Card/CardGrid'
+import UseRducer from './v18_ooks/UseReducer/UseRducer'
 
 
 
@@ -45,7 +46,7 @@ export default function App() {
         <UseId />
         <UseSyncExternalStore />
          <CardGrid />
-      */}
+    
 
 
         <Mountain />
@@ -58,11 +59,13 @@ export default function App() {
         <SideEffect />
         <ViewPage />
         <ProfileCard />
+        <Table />*/}
+        <UseRducer />
 
 
 
 
-        <Table />
+
 
 
 
