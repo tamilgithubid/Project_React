@@ -7,14 +7,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: #eee;
+  /* color: #eee; */
   text-decoration: none;
   font-family: "Poppins", "Helvetica Neue", sans-serif;
 }
 
 body {
   height: 90vh;
-  background-color: #141414;
+  /* background-color: #141414; */
   overflow-x: hidden;
 }
 

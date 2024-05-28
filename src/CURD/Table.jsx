@@ -120,7 +120,7 @@ const Table = () => {
 
     return (
         <div className="container mx-auto p-4">
-            <h1 className="text-3xl font-bold mb-4 flex justify-between items-center">
+            <h1 className="text-3xl font-bold mb-4 flex justify-between text-black items-center">
                 Employee List
             </h1>
             <div className="mb-4 flex justify-between">
@@ -129,11 +129,11 @@ const Table = () => {
                     placeholder="Search by name"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="border rounded p-2 w-1/2"
+                    className="border text-black rounded p-2 w-1/2"
                 />
-                <RefreshCw className={`cursor-pointer text-blue-500   hover:text-blue-700 ${isRefreshing && 'spin'}  me-8 mt-2 ms-auto  items-end`} onClick={handleRefresh} />
+                <RefreshCw className={`cursor-pointer text-blue-500   hover:text-blue-700 ${isRefreshing && 'spin'}  me-8 mt-2 ms-auto  items-end`} onClick={handleRefresh} color='black' />
 
-                <Button className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded" onClick={() => openDialog()}>
+                <Button className="bg-blue-500  hover:bg-blue-700 text-white px-4 py-2 rounded" onClick={() => openDialog()}>
                     Add Employee
                 </Button>
             </div>
@@ -143,23 +143,23 @@ const Table = () => {
                         <TableHead className="py-2 px-4 text-center border">
                             <Checkbox />
                         </TableHead>
-                        <TableHead className="py-2 px-4 text-center border">ID</TableHead>
-                        <TableHead className="py-2  px-4 text-center border">Name</TableHead>
-                        <TableHead className="py-2 px-4 text-center border">Position</TableHead>
-                        <TableHead className="py-2 px-4 text-center border">Department</TableHead>
-                        <TableHead className="py-2 px-4 text-center border">Actions</TableHead>
+                        <TableHead className="py-2 px-4 text-center text-black border">ID</TableHead>
+                        <TableHead className="py-2  px-4 text-center text-black border">Name</TableHead>
+                        <TableHead className="py-2 px-4 text-center text-black border">Position</TableHead>
+                        <TableHead className="py-2 px-4 text-center text-black border">Department</TableHead>
+                        <TableHead className="py-2 px-4  text-center  text-black border">Actions</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
                     {filteredEmployees.map((employee) => (
                         <TableRow key={employee.id} className="hover:bg-gray-100">
                             <TableCell className="py-2 px-4 border">
-                                <Checkbox /> {/* Add a checkbox for each row */}
+                                <Checkbox />
                             </TableCell>
-                            <TableCell className="py-2 px-4 border">{employee.id}</TableCell>
-                            <TableCell className="py-2 px-4 border">{employee.name}</TableCell>
-                            <TableCell className="py-2 px-4 border">{employee.position}</TableCell>
-                            <TableCell className="py-2 px-4 border">{employee.department}</TableCell>
+                            <TableCell className="py-2 text-black px-4 border">{employee.id}</TableCell>
+                            <TableCell className="py-2  text-black px-4 border">{employee.name}</TableCell>
+                            <TableCell className="py-2 text-black px-4 border">{employee.position}</TableCell>
+                            <TableCell className="py-2 text-black px-4 border">{employee.department}</TableCell>
                             <TableCell className="    border justify-center flex">
                                 <Button className="bg-yellow-500 hover:bg-yellow-700 text-white px-2 py-1 rounded mr-2" onClick={() => openDialog(employee)}>
                                     Edit
