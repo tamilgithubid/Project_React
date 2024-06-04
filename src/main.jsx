@@ -7,6 +7,9 @@ import './index.css'
 import UseTransition from './v18_ooks/UseTransition'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Mountain from './Parallax/Mountain'
+import Table from './CURD/Table'
+import Home from './FB-RealTime DB/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,7 +17,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/main" element={<UseTransition />} />
+        <Route path="/main" element={<Mountain />} />
+        <Route path="/table" element={<Table />} />
+        <Route path="/home" element={<Home />} />
+
+
       </Routes>
       <ToastContainer />
     </Router>

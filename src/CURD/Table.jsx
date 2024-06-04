@@ -16,7 +16,7 @@ import { RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
-
+import { useNavigate } from 'react-router-dom'
 import {
     Table as ShadcnTable,
     TableBody,
@@ -52,6 +52,11 @@ const Table = () => {
     const handlePageClick = (data) => {
         setCurrentPage(data.selected);
     };
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/home");
+    }
 
     const addEmployee = async () => {
         const newEmployee = { name, position, department };
@@ -157,7 +162,7 @@ const Table = () => {
                                 <Checkbox />
                             </TableCell>
                             <TableCell className="py-2 text-black px-4 border">{employee.id}</TableCell>
-                            <TableCell className="py-2  text-black px-4 border">{employee.name}</TableCell>
+                            <TableCell onClick={handleClick} className="py-2  text-black px-4 border">{employee.name}</TableCell>
                             <TableCell className="py-2 text-black px-4 border">{employee.position}</TableCell>
                             <TableCell className="py-2 text-black px-4 border">{employee.department}</TableCell>
                             <TableCell className="    border justify-center flex">

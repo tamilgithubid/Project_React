@@ -21,11 +21,8 @@ import Mountain from './Parallax/Mountain'
 import SideEffect from './3D Card/SideEffect'
 import CardGrid from './3D Card/CardGrid'
 import UseRducer from './v18_ooks/UseReducer/UseRducer'
-
-
-
-
-
+import Home from './FB-RealTime DB/Home'
+import UseMemo from './v18_ooks/UseMemo/UseMemo'
 
 
 export default function App() {
@@ -37,30 +34,33 @@ export default function App() {
         Go to a non-existent page
       </Link> */}
       <div>
-        {/**  <UpdateName />
-        <UseTransition />
+        {/**  <UpdateName />      
+        <Table />
+        <Home />
+        <CardGrid />
+        <UseDeferredValue />
+        
+        <ViewTabs />
+        <Comments />
+        <UseSyncExternalStore />
+        <ProfileCard />
         <UseImparitiveHandle />
+        <ViewPage />
+        <DashBoard />
+        <SideEffect />
+        <Mountain />
+        <UseTransition />
         <UseCallback />
         <UseLayoutEffect />
-        <UseDeferredValue />
         <UseId />
-        <UseSyncExternalStore />
-         <CardGrid />
-    
+         <LogIn />
+*/}
 
-
-        <Mountain />
-
-        <ViewTabs />
-        <DashBoard />
-        <Comments />
-
-        <LogIn />
-        <SideEffect />
-        <ViewPage />
-        <ProfileCard />
-        <Table />*/}
+        <UseMemo />
         <UseRducer />
+
+
+
 
 
 

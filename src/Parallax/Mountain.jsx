@@ -1,9 +1,17 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Mountain = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/table");
+    }
+
+
     return (
         <div>
-            <div id="first" className="parallax bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/flagged/photo-1575143837079-efa006aa9a02')" }}>
+            <div onClick={handleClick} id="first" className="parallax bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://images.unsplash.com/flagged/photo-1575143837079-efa006aa9a02')" }}>
                 <h1 className="text-3xl text-gray-800 opacity-70 text-center items-center mt-72  font-semibold  ms-80 animate-fadeInDown">Life is not a straight line</h1>
                 <h2 className="text-1xl  text-gray-500 opacity-70 text-center font-semibold    ms-10 mt-3 animate-fadeInUp">Oscar Wilde...</h2>
             </div>

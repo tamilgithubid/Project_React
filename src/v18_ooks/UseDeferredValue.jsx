@@ -6,8 +6,8 @@ const UseDeferredValue = () => {
     const defferCount = useDeferredValue(count)
 
     useEffect(() => {
-        console.log("BasicValue ", count);
-        console.log("DefferCount ", defferCount);
+
+        console.log("DefferCount ", { count, defferCount });
     })
 
     return (
