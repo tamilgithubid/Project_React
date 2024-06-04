@@ -1,7 +1,7 @@
 //useCallback
 
 import { Button } from '@/components/ui/button'
-import React, { useCallback, useState, useEffect } from 'react'
+import React, { useCallback, useState, } from 'react'
 
 const uniqueValues = new Set();
 
@@ -12,15 +12,15 @@ const UseCallback = () => {
     // useCallback to memoize the functions
     const incrementCount = useCallback(() => {
         setCount(count + 1);
-    }, [count]);
+    }, []);
 
     const decrementCount = useCallback(() => {
         setCount(count - 1);
-    }, [count]);
+    }, []);
 
     const doIncrement = useCallback(() => {
         setIncrement(increment + 1);
-    }, [increment]);
+    }, []);
 
 
     uniqueValues.add(incrementCount);
